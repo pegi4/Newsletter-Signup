@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // Publich directory where the static files are located
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 
 
