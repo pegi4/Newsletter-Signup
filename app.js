@@ -13,11 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // Publich directory where the static files are located
-const path = require('path');
-// Set the absolute path of the "public" directory
-const publicPath = path.join(__dirname, 'public');
-// Set the static directory
-app.use(express.static(publicPath));
+app.use(express.static(__dirname + "/public/"));
 
 
 
